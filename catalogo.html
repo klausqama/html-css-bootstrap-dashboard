@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="./catalogo.html">Catalogo Libri</a>
+                        <a class="nav-link"  href="./index.html">Catalogo Libri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Anagrafica Utenti</a>
@@ -37,6 +37,54 @@
                 </div>
             </div>
         </nav>
-    
+        <!--Catalogo libri-->
+        <div class="container mt-5">
+            <h2>Nuovo Libro</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class=" col-6 col-md-6">
+                        <label for="nomeAutore" class="form-label">Nome Autore</label>
+                        <input type="text" class="form-control" id="nomeAutore" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class=" col-6 col-md-6">
+                        <label for="cognomeAutore" class="form-label">Cognome Autore</label>
+                        <input type="text" class="form-control" id="cognomeAutore" placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="titolo" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro">
+                    <div class="form-text">Titolo versione italiana</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="genere" class="form-label">Genere</label>
+                        <select class="form-select" id="genere">
+                            <option selected>Scegli il genere</option>
+                            <option value="...">...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="anno" class="form-label">Anno di Pubblicazione</label>
+                        <input type="text" class="form-control" id="anno" placeholder="Inserisci l'anno"  maxlength="10">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="isbn" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="note" class="form-label">Note</label>
+                    <textarea class="form-control" id="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="disponibileDigitale">
+                    <label class="form-check-label" for="disponibileDigitale">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </form>
+        </div>
 </body>
 </html>
